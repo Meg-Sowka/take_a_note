@@ -31,21 +31,20 @@ function App() {
     });
   };
 
-  const onUpdateNote = (id: string, {tags, ...data}: NoteData) => {
+  const onUpdateNote = (id: string, { tags, ...data }: NoteData) => {
     setNotes((prevNotes) => {
-      return prevNotes.map(note => {
+      return prevNotes.map((note) => {
         if (note.id === id) {
           return { ...note, ...data, tagIds: tags.map((tag) => tag.id) };
         }
 
         return note;
       });
-
-      return [
-        ...prevNotes,
-        { ...data, id: uuidV4(), tagIds: tags.map((tag) => tag.id) },
-      ];
     });
+  };
+
+  const onDeleteNote = (id: string) => {
+    setNotes((prevNotes) => prevNotes.filter((note) => note.id !== id));
   };
 
   const addTag = (tag: Tag) => setTags((prevTags) => [...prevTags, tag]);
@@ -68,7 +67,7 @@ function App() {
           }
         />
         <Route path="/:id" element={<NoteLayout notes={notesWithTags} />}>
-          <Route index element={<Note />} />
+          <Route index element={<Note onDelete={onDeleteNote} />} />
           <Route
             path="edit"
             element={
