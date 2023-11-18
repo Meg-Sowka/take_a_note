@@ -8,7 +8,7 @@ import { useMemo } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 import { NoteList } from './pages/NoteList';
 import { NoteLayout } from './components/NoteLayout';
-import { Note } from './components/Note';
+import { Note } from './pages/Note';
 
 function App() {
   const [notes, setNotes] = useLocalStorage<RawNote[]>('NOTES', []);
