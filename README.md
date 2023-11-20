@@ -8,6 +8,7 @@ You can view project [HERE](https://meg-sowka.github.io/take_a_note/)
 
 ## To-Do List
 
+- Fixing deploy issues
 - Add context provider
 - Add markdown information
 - Add custom styles (currently useing react-bootstrap)

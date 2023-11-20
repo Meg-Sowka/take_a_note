@@ -1,5 +1,6 @@
 {
-  "name": "take-a-note",
+  "name": "take_a_note",
+  "homepage": "https://meg-sowka.github.io/take_a_note/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
