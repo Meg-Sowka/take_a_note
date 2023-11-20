@@ -1,7 +1,10 @@
 # Take a note App
 
-Small portfolio project. Allows to create and edit notes and tags for them.
 WIP - Work in Progress
+
+Small portfolio project. Allows to create and edit notes and tags for them.
+
+You can view project [HERE](https://meg-sowka.github.io/take_a_note/)
 
 ## To-Do List
 
