@@ -1,3 +1,17 @@
+# Take a note App
+
+Small portfolio project. Allows to create and edit notes and tags for them.
+WIP - Work in Progress
+
+## To-Do List
+
+- Deploy to gh-pages
+- Add context provider
+- Add custom styles (currently useing react-bootstrap)
+- Connect to database
+- Code refactoring - if needed
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
