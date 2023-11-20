@@ -95,12 +95,23 @@ export const NoteList = ({
           </Col>
         </Row>
       </Form>
+      {filteredNotes.length === 0 && (
+        <Row className="mb-4">
+          <p>
+            Currently, there are no notes available. Please start by 
+            <Link to="/new">
+              <Button variant="primary" className='ms-2'>Creating a Note</Button>
+            </Link>
+          </p>
+        </Row>
+      )}
       <Row xs={1} sm={2} lg={3} xl={4} className="g-3 mb-4">
-        {filteredNotes.map((note) => (
-          <Col key={note.id}>
-            <NoteCard id={note.id} title={note.title} tags={note.tags} />
-          </Col>
-        ))}
+        {filteredNotes.length > 0 &&
+          filteredNotes.map((note) => (
+            <Col key={note.id}>
+              <NoteCard id={note.id} title={note.title} tags={note.tags} />
+            </Col>
+          ))}
       </Row>
       <EditTagsModal
         availableTags={availableTags}

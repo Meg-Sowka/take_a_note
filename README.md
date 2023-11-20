@@ -8,8 +8,8 @@ You can view project [HERE](https://meg-sowka.github.io/take_a_note/)
 
 ## To-Do List
 
-- Deploy to gh-pages
 - Add context provider
+- Add markdown information
 - Add custom styles (currently useing react-bootstrap)
 - Connect to database
 - Code refactoring - if needed
